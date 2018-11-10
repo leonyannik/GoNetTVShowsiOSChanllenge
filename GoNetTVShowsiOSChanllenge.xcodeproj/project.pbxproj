@@ -24,9 +24,12 @@
 		B4A3295E21965E6D00AFABD1 /* Show+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3295C21965E6D00AFABD1 /* Show+CoreDataClass.swift */; };
 		B4A3295F21965E6D00AFABD1 /* Show+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3295D21965E6D00AFABD1 /* Show+CoreDataProperties.swift */; };
 		B4A3296121965F9900AFABD1 /* CoreDataShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3296021965F9900AFABD1 /* CoreDataShows.swift */; };
+		D4A93759B8BABAC7AF8A174E /* Pods_GoNetTVShowsiOSChanllenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231010C6C6929E32A7B53C14 /* Pods_GoNetTVShowsiOSChanllenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231010C6C6929E32A7B53C14 /* Pods_GoNetTVShowsiOSChanllenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoNetTVShowsiOSChanllenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7F770D28CCA1674B0265A2 /* Pods-GoNetTVShowsiOSChanllenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNetTVShowsiOSChanllenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoNetTVShowsiOSChanllenge/Pods-GoNetTVShowsiOSChanllenge.release.xcconfig"; sourceTree = "<group>"; };
 		B4A329302196176100AFABD1 /* GoNetTVShowsiOSChanllenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoNetTVShowsiOSChanllenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A329332196176100AFABD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A329382196176100AFABD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		B4A3295C21965E6D00AFABD1 /* Show+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B4A3295D21965E6D00AFABD1 /* Show+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Show+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B4A3296021965F9900AFABD1 /* CoreDataShows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataShows.swift; sourceTree = "<group>"; };
+		BCD9CBC8B4F9C5A7821D9F2C /* Pods-GoNetTVShowsiOSChanllenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNetTVShowsiOSChanllenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoNetTVShowsiOSChanllenge/Pods-GoNetTVShowsiOSChanllenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A93759B8BABAC7AF8A174E /* Pods_GoNetTVShowsiOSChanllenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		878E5AEBAF6F1CA059779A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				231010C6C6929E32A7B53C14 /* Pods_GoNetTVShowsiOSChanllenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		945F93B6F8A706645CE11B6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCD9CBC8B4F9C5A7821D9F2C /* Pods-GoNetTVShowsiOSChanllenge.debug.xcconfig */,
+				7E7F770D28CCA1674B0265A2 /* Pods-GoNetTVShowsiOSChanllenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B4A329272196176100AFABD1 = {
 			isa = PBXGroup;
 			children = (
 				B4A329322196176100AFABD1 /* GoNetTVShowsiOSChanllenge */,
 				B4A329312196176100AFABD1 /* Products */,
+				945F93B6F8A706645CE11B6B /* Pods */,
+				878E5AEBAF6F1CA059779A1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A329422196176300AFABD1 /* Build configuration list for PBXNativeTarget "GoNetTVShowsiOSChanllenge" */;
 			buildPhases = (
+				EADF6C9EBAB1F13E42D57C39 /* [CP] Check Pods Manifest.lock */,
 				B4A3292C2196176100AFABD1 /* Sources */,
 				B4A3292D2196176100AFABD1 /* Frameworks */,
 				B4A3292E2196176100AFABD1 /* Resources */,
+				6200AC09A68D1CE77ADBC4E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +207,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6200AC09A68D1CE77ADBC4E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoNetTVShowsiOSChanllenge/Pods-GoNetTVShowsiOSChanllenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoNetTVShowsiOSChanllenge/Pods-GoNetTVShowsiOSChanllenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EADF6C9EBAB1F13E42D57C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoNetTVShowsiOSChanllenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4A3292C2196176100AFABD1 /* Sources */ = {
@@ -344,6 +421,7 @@
 		};
 		B4A329432196176300AFABD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD9CBC8B4F9C5A7821D9F2C /* Pods-GoNetTVShowsiOSChanllenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +440,7 @@
 		};
 		B4A329442196176300AFABD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7F770D28CCA1674B0265A2 /* Pods-GoNetTVShowsiOSChanllenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,24 @@
+PODS:
+  - MarqueeLabel/Swift (3.2.0)
+  - NotificationBannerSwift (1.8.0):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.0.1)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - NotificationBannerSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  NotificationBannerSwift: 49fc4be7fabada55b189b50e72184c92edd5f7f7
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: c475bec1fd4e5970e2a4f8eaa428d4cdea98a7af
+
+COCOAPODS: 1.5.3

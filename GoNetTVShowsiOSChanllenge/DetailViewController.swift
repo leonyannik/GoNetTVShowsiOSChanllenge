@@ -9,10 +9,7 @@
 import UIKit
 import CoreData
 import SafariServices
-
-protocol ToggleFavoriteDelegate {
-    func toogleFavorite(index: String)
-}
+import NotificationBannerSwift
 
 class DetailViewController: UIViewController {
     // MARK: - Outlets
@@ -28,7 +25,6 @@ class DetailViewController: UIViewController {
     // MARK: - Variables
     var TvShow: ShowSt?
     var imagePlaceHolder = UIImage()
-    var delegate: ToggleFavoriteDelegate?
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +73,13 @@ class DetailViewController: UIViewController {
         DispatchQueue.main.async {
             self.TvShow!.isFavorite = !self.TvShow!.isFavorite
             self.saveDelete.title = self.TvShow!.isFavorite ? "Remove" : "MakeFavorite"
+            if self.TvShow!.isFavorite {
+            let banner = GrowingNotificationBanner(title: "Yei", subtitle: "You liked this tv show and is added to your favorites page", style: .success)
+            banner.show()
+            }else {
+                let banner = GrowingNotificationBanner(title: "Well", subtitle: "No more favorite", style: .danger)
+                banner.show()
+            }
         }
     }
     @IBAction func webPageButtonTapped(_ sender: Any) {
@@ -98,13 +101,9 @@ class DetailViewController: UIViewController {
         imdbButton.layer.cornerRadius = 8
         webPageButton.backgroundColor = UIColor(red: 0, green: 0.813, blue: 0.692, alpha: 1)
         webPageButton.layer.cornerRadius = 8
-//        navigationController?.navigationBar.barStyle = .black
-//        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.backgroundColor = UIColor(red: 0, green: 0.813, blue: 0.692, alpha: 1)
         navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0.813, blue: 0.692, alpha: 1)
-//        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-//        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     func populateView() {

@@ -22,7 +22,6 @@ class FavoritesViewController: UIViewController {
         super.viewDidLoad()
         setView()
         customizeView()
-        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -41,8 +40,6 @@ class FavoritesViewController: UIViewController {
             controller.TvShow?.isFavorite = true
             controller.imagePlaceHolder = imageToPass
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
     // MARK: - Outlet functions
     // MARK: - Functions

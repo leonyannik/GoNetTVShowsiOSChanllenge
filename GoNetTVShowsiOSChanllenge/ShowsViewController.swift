@@ -43,11 +43,7 @@ class ShowsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         imagesCacheContent = [:]
     }
-//    override func viewWillDisappear(_ animated: Bool) {
-//        if self.isMovingFromParent {
-//            imagesCacheContent = [:]
-//        }
-//    }
+
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailFromMainList" {
@@ -55,8 +51,6 @@ class ShowsViewController: UIViewController {
             controller.TvShow = TvShows[indexToPass]
             controller.imagePlaceHolder = imagesCacheContent[String(indexToPass)] ?? UIImage()
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
     // MARK: - Outlet functions
     // MARK: - Functions
