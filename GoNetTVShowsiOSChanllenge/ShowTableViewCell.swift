@@ -14,6 +14,7 @@ class ShowTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     // MARK: - Constants
     // MARK: - Variables
+    var index = ""
     // MARK: - View lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +25,26 @@ class ShowTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func assignImage() {
+        self.showImageView.image = imagesCacheContent[index]
+    }
+    
+    func imageFromServerURL(urlString: String, index: String) {
+        URLSession.shared.dataTask(with: NSURL(string: urlString)! as URL, completionHandler: { (data, response, error) -> Void in
+            if error != nil {
+                DispatchQueue.main.async {
+                    self.showImageView.image = nil
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data!) {
+                    imagesCacheContent[index] = image
+                    self.assignImage()
+                }
+            }
+        }).resume()
     }
 
 }
