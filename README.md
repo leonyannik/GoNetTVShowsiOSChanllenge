@@ -16,3 +16,6 @@ intalled with cocoapods
 
 CoreData was used, to save the favorite shows, and i decided to use NSURLSession instead of a thirdparty library to show that i undestand networking.
 
+### MoreTime
+
+With more time, i would ensure the app stability, manage better the model to avoid having Show and ShowS, make the cache more efitient and try to simulate the infinit scrolling, also, i would redesign the detail page. to make it fancier.
